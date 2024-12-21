@@ -1,0 +1,155 @@
+/* Basis-Styles */
+body {
+    
+    margin: 0;
+    padding:0;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    
+    background: linear-gradient(to bottom, #F9F0DF, #92867A) no-repeat;
+}
+
+main {
+    height: auto;
+    flex-grow: 1;
+    padding: 0px;
+    
+}
+
+img {
+    width: auto; 
+    height: auto;
+}
+
+footer {
+    background-color: #f0efe9;
+    height: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content:center;
+    background-color: #92867A;
+    padding-left: 40px;
+    display: flex;
+    
+    align-items: center;
+}
+
+
+
+.logo img {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+/* Google Maps */
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    min-width: 100px;
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 100%;
+}
+
+.flex > iframe {
+    width: 75vw;
+    height: 40vh;
+}
+
+.info {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.bild{border-radius:30px;
+    max-width: 30%;vw
+    height: auto;
+
+}
+
+.info {display: flex;
+        justify-content: center;
+
+}
+
+
+
+@media (max-width: 340px) {
+    body {
+        padding: 0px;
+    }
+
+    .navbar {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        padding-left: 5px;
+        display: flex;
+        align-items: center;
+    }
+ }
+
+/*iphone 12 pro*/
+@media (max-width: 391px) {
+    .navbar {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        padding-left: 5px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/*iphone 14 pro max
+@media (max-width: 431px) {
+    body {
+        padding: 0px;
+    }
+    footer {
+        font-size: 16px;
+
+    }
+    .navbar {
+        font-size: 19px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        display: flex;
+        justify-content: flex-start;
+        height: 50px;
+        border-radius: 70px;
+    
+}
+}
+*/
