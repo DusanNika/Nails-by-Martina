@@ -9,8 +9,35 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    
-    background: linear-gradient(to bottom, #F9F0DF, #92867A) no-repeat;
+    background: linear-gradient(to bottom, #f9f0df, #92867A) no-repeat;
+}
+
+.calendly-container {
+    /* Zentrieren auf der Seite */
+    display: flex;
+    justify-content: center; /* horizontal zentrieren */
+    align-items: center; /* vertikal zentrieren */
+    max-height: 600px; /* ganze Höhe des Viewports */
+   padding-bottom: 0px;
+   padding-top: 0px;
+}
+
+.calendly-inline-widget {
+    /* Falls nötig: Rahmen, Schatten, etc. */
+    border: 10px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    height: 500px;
+}
+
+
+
+
+
+
+.h1{
+    font-size: 2em;
+    text-align: center;
 }
 
 main {
@@ -20,11 +47,6 @@ main {
     
 }
 
-img {
-    width: auto; 
-    height: auto;
-}
-
 footer {
     background-color: #f0efe9;
     height: 50px;
@@ -32,27 +54,24 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    border: solid 3px whitesmoke;
 }
 
 /* Navigation */
 .navbar {
     display: flex;
-    justify-content:center;
+    justify-content:left;
     background-color: #92867A;
-    padding-left: 40px;
-    display: flex;
-    
     align-items: center;
+    border: solid 3px whitesmoke;
 }
-
-
 
 .logo img {
     display: flex;
     justify-content: flex-start;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 100px;
+    border: solid 1px whitesmoke;
 }
 
 .navbar a {
@@ -65,91 +84,166 @@ footer {
 /* Google Maps */
 .flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    min-width: 100px;
+    margin: 10px 40px;
+    min-width: 200px;
     max-width: 100%;
     min-height: 300px;
     max-height: 100%;
+    border: solid 7px whitesmoke;
 }
 
 .flex > iframe {
-    width: 75vw;
-    height: 40vh;
+    width: 100%;
+    height: 50vh;
+    
 }
 
-.info {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+/*info ist für die 2 Bilder insta und tiktok*/
+.info {display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 
-.bild{border-radius:30px;
-    max-width: 30%;vw
-    height: auto;
-
+.bild{border-radius:150px;
+    max-width: 25%vw;
+    height: 60px;
+    border: 3px solid whitesmoke;
+    margin: 5px 40px;
+    
 }
 
 .info {display: flex;
-        justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 20vh;
+    }
 
-}
 
-
-
-@media (max-width: 340px) {
+@media (max-width: 375px) {
     body {
         padding: 0px;
+        margin: 0px;
     }
-
-    .navbar {
-        font-size: 12px;
+    .navbar { font-size: 14px;
         display: flex;
-        justify-content: center;
-        padding-left: 5px;
-        display: flex;
+        justify-content: space-around;    
+    }
+    .info {display: flex;
         align-items: center;
+        flex-direction: row;
+     
     }
+    .bild{border-radius:150px;
+        max-width: 25%vw;
+        height: 30px;
+        border: 3px solid whitesmoke;
+        margin: 5px 40px;
  }
+ .calendly-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-height: 600px; 
+   padding-bottom: 50px;
+   padding-top: 20px;
+}
 
-/*iphone 12 pro*/
-@media (max-width: 391px) {
-    .navbar {
-        font-size: 16px;
-        display: flex;
-        justify-content: center;
-        padding-left: 5px;
-        display: flex;
-        align-items: center;
-    }
+.calendly-inline-widget {
+    border: 10px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    height: 650px;
 }
 
 
-/*iphone 14 pro max
-@media (max-width: 431px) {
+}
+/*iphone 12 pro*/
+@media (max-width: 390px) {
     body {
         padding: 0px;
+        margin: 0px;
     }
-    footer {
-        font-size: 16px;
 
+
+    .navbar { font-size: 14px;
+        display: flex;
+        justify-content: space-around;    
     }
-    .navbar {
-        font-size: 19px;
-        display: flex;
-        justify-content: space-evenly;
-        padding-left: 5px;
-        display: flex;
+    .info {display: flex;
         align-items: center;
+        flex-direction: row;
+        margin-top: 0px;
+        margin-right: 0px;
+        
     }
-    .logo img {
-        display: flex;
-        justify-content: flex-start;
+    .bild{border-radius:150px;
+        max-width: 25%vw;
         height: 50px;
-        border-radius: 70px;
+        border: 3px solid whitesmoke;
+        margin-right:10px;
+    }
+
+}
+
+
+/*iphone 14 pro max */
+@media (max-width: 430px) {
+   
+
+     body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navbar { font-size: 16px;
+        display: flex;
+        justify-content: space-around;    
+    }
+
+    .info {display: flex;
+        align-items: center;
+        flex-direction: row;
     
+        
+        
+    }
+    .bild{border-radius:150px;
+        max-width: 25%vw;
+        height: 50px;
+        border: 3px solid whitesmoke;
+        margin-right:10px;
+    }
+   
+    .calendly-container {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        max-height: 600px; 
+       padding-bottom: 50px;
+       padding-top: 20px;
+    }
+    
+    .calendly-inline-widget {
+        border: 10px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        height: 650px;
+    }
+
+
+
+
+
+
+
+
 }
-}
-*/
+
+
+
+
+
