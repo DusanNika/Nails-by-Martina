@@ -40,7 +40,7 @@ body {
 .container{display: flex; /* Flexbox aktivieren */
     justify-content: center; /* Horizontal zentrieren */
     align-items: center; /* Vertikal zentrieren */
-    height: 50vh; /* Container füllt die gesamte Höhe */
+    height: 100vh; /* Container füllt die gesamte Höhe */
     margin: 0; 
 
 }
