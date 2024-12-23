@@ -22,6 +22,13 @@ body {
    padding-top: 0px;
 }
 
+.calendly-inline-widget {
+    /* Falls nötig: Rahmen, Schatten, etc. */
+   
+    border-radius: 8px;
+    height: 500px;
+}
+
 
 
 .h1{
@@ -141,7 +148,11 @@ footer {
    padding-top: 20px;
 }
 
-
+.calendly-inline-widget {
+    
+    border-radius: 8px;
+    height: 650px;
+}
 
 
 }
@@ -211,7 +222,12 @@ footer {
        padding-top: 20px;
     }
     
-   
+    .calendly-inline-widget {
+        
+        border-radius: 8px;
+        height: 650px;
+    }
+
 
 
 
