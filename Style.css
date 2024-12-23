@@ -25,9 +25,9 @@ body {
     width: 100%; /* Nimmt die gesamte Breite des Containers ein */
     max-width: 400px; /* Begrenze die maximale Breite */
     height: 400px; /* Nimmt die gesamte Höhe des Containers ein */
-    border: 5px solid #92867A; /* Optionale Rahmenfarbe */
+    border: 6px solid #040404; /* Optionale Rahmenfarbe */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sanfter Schatten */
-    border-radius: 10px; /* Abgerundete Ecken */ 
+    border-radius: 10px;/* Abgerundete Ecken */ 
    
 }
 
