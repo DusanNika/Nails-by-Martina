@@ -13,22 +13,29 @@ body {
 }
 
 .calendly-container {
-    /* Zentrieren auf der Seite */
     display: flex;
-    justify-content: center; /* horizontal zentrieren */
-    align-items: center; /* vertikal zentrieren */
-    max-height: 600px; /* ganze Höhe des Viewports */
+    justify-content: center; 
+    align-items: center; 
+    max-height: 600px; 
    padding-bottom: 0px;
    padding-top: 0px;
 }
 
-.calendly-inline-widget {
-    /* Falls nötig: Rahmen, Schatten, etc. */
-   
-    border-radius: 8px;
-    height: 500px;
-}
 
+
+.imgliste{
+    width: 100vw;
+    height: 80vh;
+    object-fit: contain;
+    margin-top:  10px;
+}
+.container{display: flex; /* Flexbox aktivieren */
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    height: 50vh; /* Container füllt die gesamte Höhe */
+    margin: 0; 
+
+}
 
 
 .h1{
@@ -36,6 +43,11 @@ body {
     text-align: center;
 }
 
+
+.h5{
+   
+    text-align: center;
+}
 main {
     height: auto;
     flex-grow: 1;
@@ -56,7 +68,7 @@ footer {
 /* Navigation */
 .navbar {
     display: flex;
-    justify-content:left;
+    justify-content:center;
     background-color: #92867A;
     align-items: center;
     border: solid 3px whitesmoke;
@@ -65,9 +77,10 @@ footer {
 .logo img {
     display: flex;
     justify-content: flex-start;
-    height: 40px;
-    border-radius: 100px;
+    height: 35px;
+    border-radius: 150px;
     border: solid 1px whitesmoke;
+    padding-left: 1px;
 }
 
 .navbar a {
@@ -133,7 +146,7 @@ footer {
         flex-direction: row;
      
     }
-    .bild{border-radius:150px;
+    .bild{border-radius:100px;
         max-width: 25%vw;
         height: 30px;
         border: 3px solid whitesmoke;
@@ -144,15 +157,11 @@ footer {
     justify-content: center;
     align-items: center; 
     max-height: 600px; 
-   padding-bottom: 50px;
-   padding-top: 20px;
+    padding-top: 10px;
+   
 }
 
-.calendly-inline-widget {
-    
-    border-radius: 8px;
-    height: 650px;
-}
+
 
 
 }
@@ -175,13 +184,15 @@ footer {
         margin-right: 0px;
         
     }
-    .bild{border-radius:150px;
+    .bild{border-radius:100px;
         max-width: 25%vw;
         height: 50px;
         border: 3px solid whitesmoke;
         margin-right:10px;
     }
-
+    .logo img{
+        margin-left: 1px;
+    }
 }
 
 
@@ -206,7 +217,7 @@ footer {
         
         
     }
-    .bild{border-radius:150px;
+    .bild{border-radius:100px;
         max-width: 25%vw;
         height: 50px;
         border: 3px solid whitesmoke;
@@ -218,14 +229,16 @@ footer {
         justify-content: center;
         align-items: center; 
         max-height: 600px; 
-       padding-bottom: 50px;
-       padding-top: 20px;
+       padding-top: 10px;
     }
     
-    .calendly-inline-widget {
-        
-        border-radius: 8px;
-        height: 650px;
-    }
+    
+
+
 
 }
+
+
+
+
+
